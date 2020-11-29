@@ -1,0 +1,6 @@
+eee47c3f9ceaf5857aac2e94592e3d0c
+
+
+67be497e6adb9b7cfac5036ccda85481 - ws
+
+api.openweathermap.org/data/2.5/weather?q={city name}&appid
