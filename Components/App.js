@@ -47,6 +47,7 @@ function AppComponent() {
             value={query}
             onKeyPress={search}
           />
+          
         </div>
         {(typeof weather.main != "undefined") ? (
         <div>
@@ -56,15 +57,32 @@ function AppComponent() {
           </div>
           <div className="weather-box">
             <div className="temp">
+              <h1>temperature</h1>
               {Math.round(weather.main.temp)}°c
+              <br/>
+              <h1>humidity</h1>
+              {weather.main.humidity}%
+              <br/>
+              <h1>Pressure</h1>
+              {weather.main.pressure} hPa
+              <br/>
+              <h1>wind direction</h1>
+              {weather.wind.deg}
+              <br/>
+              <h1>visibility</h1>
+              {weather.visibility / 1000} km
             </div>
             <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
+
+        
         ) : ('')}
       </main>
     </div>
-  );
+    
+      );
+      
 }
-
+    
 export default AppComponent;

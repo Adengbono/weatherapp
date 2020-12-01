@@ -1,16 +1,16 @@
 import React from 'react'
 import '../App.css'
 
-import LogIn from '../Pages/LogIn'
+//import LogIn from '../Pages/LogIn'
 // import { 
 //     Link,
 //   } from "react-router-dom"; 
 
 function LogInComponent() {
         
-    const handlelogin = () =>{
-        alert('Sign In Successful')
-       }
+    //const handlelogin = () =>{
+       // alert('Sign In Successful')
+       //}
   return (
     <div className="login-wrapper" >
         <div className="login-form">
@@ -25,7 +25,7 @@ function LogInComponent() {
         <div className="form-group">
         </div>
         <div className="form-group">
-            <button className="btn btn-primary btn-block" onClick={handlelogin}>Log in</button>
+            <button className="btn btn-primary btn-block"/*onClick={handlelogin}*/><a href = '/app'>Log in</a></button>
         </div>
               
     </form>
